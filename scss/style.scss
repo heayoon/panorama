@@ -204,8 +204,6 @@ body{
 
             //네 번째 article
             &.face4{
-                display: block;
-                
                 .inner{
                     div{
                         &:nth-of-type(1){
@@ -253,6 +251,108 @@ body{
                     }
                 }
             }
+
+            //다섯 번째 article
+            &.face5{
+                .inner{
+                    div{
+                        img{
+                            margin-bottom: 40px;
+                        }
+
+                        .pic{
+                            width: 100%;
+                            height: 250px;
+                            border: 1px solid #bbb;
+                            background: #000;
+                            margin-bottom: 70px;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .reflect{
+                            position: absolute;
+                            top: 100%;
+                            right: 0%;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+
+                        &:hover{
+                            .reflect{
+                                top: -40%;
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //여섯 번째 article
+            &.face6{
+                display: block;
+
+                .inner{
+                    div{
+                        width: 100%;
+                        height: 185px;
+                        margin-bottom: 20px;
+
+                        &::after{
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+
+                        i{
+                            float: left;
+                            width: 80px;
+                            height: 100px;
+                            font-size: 50px;
+                            text-align: center;
+                            padding-top: 20px;
+                            transition: 0.5s;
+                        }
+                        .con{
+                            width: 380px;
+                            height: 100px;
+                            padding-left: 70px;
+                            float: right;
+                            border-left: 1px solid #bbb;
+
+                            h2{
+                                font: 20px/1.2 "orbitron";
+                                color: #fff;
+                                margin-bottom: 20px;
+                                transition: 0.5s;
+                                transform-origin: left center;
+                            }
+
+                            >p{
+                                font: 16px/1.2 "arial";
+                            }
+                        }
+                        &:hover{
+                                i{
+                                    color: lightcyan;
+                                    text-shadow: 0px 0px 10px aqua;
+                                    transform: scale(1.2);
+                                }
+
+                                h2{
+                                    color: lightcyan;
+                                    text-shadow: 0px 0px 10px aqua;
+                                    transform: scale(1.2);
+                                }
+                        }
+                    }
+                }
+            }
+
+                }
+            }
         }
-    }
-}
